@@ -1,0 +1,80 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Avenir";
+}
+
+
+.square {
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	/*transition time for property assigned to elements (just background)*/
+	transition: background 0.6s; 
+	/*added for additional browser compatibility*/ 
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+
+}
+
+#container {
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1.1;
+	color: #fff;
+	background: steelblue;
+	margin: 0;
+	font-weight: normal; /* do this here because h1 default is bolded */
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%;  /* 200% of the h1 font-size */
+}
+
+#message {
+	display: inline-block; 
+	/* change the span to inline-block bcuz inline elements dont take height & width properties*/
+	width: 20%;
+}
+
+#stripe {
+	background: #fff;
+	height: 30px;
+	text-align: center;	
+}
+
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-size: inherit;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	/*transition time for properties assigned to elements (all properties assigned to button)*/
+	transition: all, 0.3s; 
+	/*added for additional browser compatibility*/ 
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none; /* this gets rid of browser generated outline */
+}
+
+button:hover {
+	color: #fff;
+	background: steelblue;
+}
